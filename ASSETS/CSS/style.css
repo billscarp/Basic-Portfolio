@@ -19,26 +19,23 @@ clear: both;
 
 }
 
-
-
 #content {
     
 overflow:auto;
 height: 100%;
 opacity: 0.6;
+    
  }
-
-
 
 #nav {
     
-background-color: white;
+background-color: whitesmoke;
 padding: 10px;
 margin: auto;
 text-align: center;
+opacity: 0.6;
 
-    
-    
+
 }
 
 #feature {
@@ -47,7 +44,6 @@ background-color: white;
 padding: 10px;
 margin: auto;
 text-align: center;
-
 
 }
 
@@ -63,10 +59,12 @@ opacity: 0.6;
 
 .column1, .column2, .column3 {
     
-background-color: #efefef;
+background-color: black;
 width: 300px;
 float: left;
-margin:10px;
+margin: 10px;
+color: white;
+opacity: 0.9;
     
 }
 
@@ -75,6 +73,10 @@ li {
     padding: 5px;
     
 }
+
+
+
+
 
 
 
