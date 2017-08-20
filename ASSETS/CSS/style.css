@@ -5,69 +5,133 @@
 body {     
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; 
     font-size: 12px;
-    background-image: url("../images/BillScarpelli.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background: url("../images/background.jpg") no-repeat center center fixed;  
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     position: relative;
-    width:960px;
+    max-width:960px;
+    width: 98%;
     margin: 0 auto;
     line-height: 34px;
     clear: both;
 }
 
-#content {
-    overflow:auto;
-    height: 100%;
-    opacity: 0.6;
-}
-
-nav {  
-    background-color: rgba(255,255,255,.80);
-    padding: 10px;
-    margin: auto;
+header {
+ 
+    font-size: 1.8rem;
+    color: rgba(255,255,255,.4);
+    text-transform: uppercase;
+    letter-spacing: .3rem;
     text-align: center;
-    opacity: 0.6;
+    
 }
 
-article {
-    background-color: black;
-    width: 300px;
-    float: left;
-    margin: 10px;
-    color: white;
-    opacity: 0.9; 
+header h1 {
+    
+    font-weight: normal;
+    margin:0;
+    padding: 15px;
     
 }
 
 
-#feature {
-    background-color: white;
+/*--------NAVIGATION----------*/
+nav {  
+    background-color: rgba(0,0,0,.4);
     padding: 10px;
-    margin: auto;
+    margin-bottom: 10px;
     text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+}
+nav li {
+    display: inline;
+    padding: 20px;  
+}
+nav a, nav a:visited {
+    color: rgba(255,255,255,.7);
+    text-decoration: none; 
+    transition: color .2s ease;
+}
+nav a:hover {
+    color: rgba(255,255,255,1);
 }
 
-footer {
-    background-color: white;
-    padding: 10px;
-    margin: auto;
-    text-align: center;
-    opacity: 0.6;    
+
+#content {
+    overflow:auto;
+    height: 100%;
+    
 }
 
-.column1, .column2, .column3 {    
-    background-color: black;
-    width: 300px;
-    float: left;
-    margin: 10px;
+
+article {
+    background-color:  rgba(0,0,0,.6);
+    margin-top: 10px;
     color: white;
-    opacity: 0.9; 
+    column-count: 3;
+    column-gap: 30px;
+    padding: 30px;
 }
 
-li {
-    display:inline;
-    padding: 5px;  
+
+/*--------FEATURE----------*/
+#feature {
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(255,255,255,.6);
+   
+
+}
+#feature img {    
+    box-shadow: 0px 0px 20px rgba(0,0,0,.5);
+    animation:fade-in 1s ease-in forwards;
+    }
+
+@keyframes fade-in{
+    
+    from{opacity:0;}
+    to {opacity:1;}
+    
+}
+#portfolio {
+    width: 100%;  
+    margin: auto;
+    
+}
+
+#portfolio img {    
+    width: auto;
+    max-width: 80%;
+    
+    }
+
+
+
+/*--------FOOTER----------*/
+footer {
+    background-color: rgba(255,255,255,.6);
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;   
+}
+footer a, footer a:visited {
+    font-size: 14px;
+    color: black;
+}
+
+
+.container {
+    background-color: rgba(255,255,255,.6);
+    padding: 20px;
+}
+
+form {
+    width: 80%;
+    margin:auto;
 }
 
 /* Style inputs with type="text", select elements and textareas */
@@ -77,9 +141,10 @@ input[type=text], select, textarea {
     border: 1px solid #ccc; 
     border-radius: 4px; 
     box-sizing: border-box; 
-    margin-top: 6px; 
+    margin-top: -5px; 
     margin-bottom: 16px; 
-    resize: vertical 
+    resize: vertical;
+    background-color: rgba(255,255,255,.8);
 }
 
 input[type=submit] {
@@ -95,13 +160,49 @@ input[type=submit]:hover {
     background-color: #45a049;
 }
 
-.container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
+label {
+    font-size: 1.2rem;
+}
+
+/*--------MEDIA 800px----------*/
+@media (max-width: 800px){
+    
+    body {
+        /*border: 5px solid green;*/
+    } 
+    
+    article {
+        column-count: 2;
+    }
+    
+    #portfolio img {    
+        max-width: 95%;
+
+    }
+    
 }
 
 
+/*--------MEDIA 550px----------*/
+@media (max-width: 550px){
+    
+    body {
+        /*border: 5px solid yellow;*/
+        width: 100%;
+    }
+    
+  nav {  
+        font-size: .9rem;
+   }  
+    
+    nav li {
+        padding: 10px;  
+    }
+    
+    article {
+        column-count: 1;
+    }
 
+}
 
 
