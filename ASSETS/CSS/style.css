@@ -134,7 +134,7 @@ form {
     margin:auto;
 }
 
-/* Style inputs with type="text", select elements and textareas */
+/*--------CONTACT FORM----------*/
 input[type=text], select, textarea {
     width: 100%; 
     padding: 12px; 
@@ -157,7 +157,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: gray;
 }
 
 label {
