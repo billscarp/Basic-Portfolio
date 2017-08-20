@@ -129,12 +129,15 @@ footer a, footer a:visited {
     padding: 20px;
 }
 
+
+
+/*--------CONTACT FORM----------*/
+
 form {
     width: 80%;
     margin:auto;
 }
 
-/*--------CONTACT FORM----------*/
 input[type=text], select, textarea {
     width: 100%; 
     padding: 12px; 
@@ -154,6 +157,8 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    display: block;
+    margin: 0 auto;
 }
 
 input[type=submit]:hover {
